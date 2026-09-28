@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { CONTROLES, CONTROLES_POR_TEMA, ROTULOS_TEMA } from '../datos/controles';
 
 /** Tabla de los controles de un tema (5, 6, 7 u 8), generada desde src/datos/controles.ts. */
@@ -11,7 +12,8 @@ export function TablaTema({ tema }: { tema: number }) {
         {rotulos.plural}: <strong>{controles.length} controles</strong> del Anexo A de
         ISO/IEC 27001:2022, desarrollados con guía de implementación en ISO/IEC 27002:2022,
         capítulo {tema}. Los marcados como <span className="chip-nuevo">NUEVO</span> no existían en
-        la edición de 2013.
+        la edición de 2013. <strong>Pulsa el número de cualquier control</strong> para ver su
+        detalle: enunciado oficial, atributos, claves de implementación y preguntas de auditoría.
       </p>
 
       <div className="tabla-scroll">
@@ -28,7 +30,9 @@ export function TablaTema({ tema }: { tema: number }) {
             {controles.map((c) => (
               <tr key={c.id}>
                 <td>
-                  <strong>A.{c.id}</strong>
+                  <strong>
+                    <Link to={`/iso-27002/control/${c.id}`}>A.{c.id}</Link>
+                  </strong>
                 </td>
                 <td>
                   {c.nombre} {c.nuevo && <span className="chip-nuevo">NUEVO</span>}
@@ -87,7 +91,9 @@ export function TablaCorrespondencia() {
             {CONTROLES.map((c) => (
               <tr key={c.id}>
                 <td>
-                  <strong>A.{c.id}</strong>
+                  <strong>
+                    <Link to={`/iso-27002/control/${c.id}`}>A.{c.id}</Link>
+                  </strong>
                 </td>
                 <td>{c.nombre}</td>
                 <td>{c.nuevo ? '—' : c.origen2013}</td>

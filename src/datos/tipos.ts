@@ -45,6 +45,20 @@ export interface Norma {
   fuente: Fuente;
 }
 
+/** Atributos oficiales de un control (ISO/IEC 27002:2022, cláusula 4.2). */
+export interface Atributos {
+  /** Preventive | Detective | Corrective */
+  tipo: string[];
+  /** Confidentiality | Integrity | Availability */
+  cia: string[];
+  /** Identify | Protect | Detect | Respond | Recover (ISO/IEC TS 27110) */
+  ciber: string[];
+  /** Capacidades operativas (15 valores posibles). */
+  cap: string[];
+  /** Governance_and_Ecosystem | Protection | Defence | Resilience. */
+  dom: string[];
+}
+
 /** Un control del Anexo A de 27001 / capítulos 5 a 8 de 27002. */
 export interface Control {
   /** Identificador 2022, p. ej. "5.7" o "8.24". */
