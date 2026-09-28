@@ -1,0 +1,88 @@
+<h1 class="sin-margen-sup">Anexo A (normativo): controles de seguridad de la información</h1>
+      <p class="entradilla">El Anexo A de la ISO/IEC 27001:2022 es la lista de referencia de los <strong>93 controles</strong>. Es normativo en el sentido exacto de la cláusula 6.1.3 c): al determinar los controles necesarios, la organización debe <strong>compararlos con el Anexo A y verificar que no ha omitido ninguno necesario</strong>. No es una checklist que se marca y ya.</p>
+
+      <h2 id="estructura">De 14 dominios a 4 temas</h2>
+      <p>La edición 2022 reorganizó los 114 controles de 2013 (14 dominios) en <strong>93 controles agrupados en cuatro temas</strong>, más homogéneos y alineados con el lenguaje de las mejores prácticas modernas. La Tabla A.1 de la 27001 y los capítulos 5 a 8 de la 27002 son <strong>el mismo conjunto de controles, idéntico en número y título</strong>.</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Los cuatro temas del Anexo A (edición 2022)</caption>
+          <thead>
+            <tr>
+              <th>Tema</th>
+              <th>Controles</th>
+              <th>Nuevos en 2022</th>
+              <th>Qué cubre, en una línea</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A.5 · Organizacionales</strong></td>
+              <td>37</td>
+              <td>3</td>
+              <td>Políticas, roles, inventario y clasificación, acceso (reglas), proveedores y nube, incidentes, continuidad, legal y cumplimiento.</td>
+            </tr>
+            <tr>
+              <td><strong>A.6 · Personas</strong></td>
+              <td>8</td>
+              <td>0</td>
+              <td>Todo el ciclo de las personas: selección, formación, disciplina, confidencialidad, teletrabajo y reporte de eventos.</td>
+            </tr>
+            <tr>
+              <td><strong>A.7 · Físicos</strong></td>
+              <td>14</td>
+              <td>1</td>
+              <td>Perímetros, entradas, salas, entorno, equipo, soportes, cableado, servicios de apoyo y eliminación segura.</td>
+            </tr>
+            <tr>
+              <td><strong>A.8 · Tecnológicos</strong></td>
+              <td>34</td>
+              <td>7</td>
+              <td>Dispositivos, identidad y acceso técnico, malware, vulnerabilidades, configuración, datos, continuidad técnica, redes, criptografía y desarrollo seguro.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="uso">Cómo se usan los controles: el camino 6.1.3 → Anexo A</h2>
+      <ol>
+        <li>Evaluados y priorizados los riesgos (6.1.2), la organización <strong>elige opciones de tratamiento</strong> (evitar, asumir, transferir, reducir).</li>
+        <li><strong>Determina los controles necesarios</strong> para implementar esas opciones —pueden venir del Anexo A, de otro marco o diseñarse a medida—.</li>
+        <li><strong>Compara con el Anexo A</strong> para verificar que no se omitió ningún control necesario.</li>
+        <li>Produce la <strong>SoA</strong>: controles necesarios con su justificación, estado de implementación y justificación de las exclusiones.</li>
+        <li>Formula el <strong>plan de tratamiento</strong> y obtiene la aprobación de los dueños del riesgo.</li>
+      </ol>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">Idea clave</span>
+        <p>La dirección del vínculo es riesgo → control, nunca al revés. El Anexo A sirve para <strong>asegurarse de no olvidar</strong> lo necesario (6.1.3 c), no para justificar instalarlo todo. Y la 27002:2022 añade lo que la 2013 no ordenaba bien: <strong>atributos</strong> de cada control (tipo, propiedades CIA, conceptos de ciberseguridad, capacidades operativas y dominios de seguridad) que permiten mirar los mismos 93 controles desde otras perspectivas.</p>
+      </div>
+
+      <h2 id="temas">Recorrido por los temas</h2>
+      <div class="rejilla">
+        <a class="tarjeta" href="tema-5.html">
+          <span class="num">A.5</span>
+          <h3>Controles organizacionales</h3>
+          <p>37 controles: de las políticas al cumplimiento, incluidos los tres grandes nuevos de 2022 (inteligencia de amenazas, nube y preparación TIC).</p>
+        </a>
+        <a class="tarjeta" href="tema-6.html">
+          <span class="num">A.6</span>
+          <h3>Controles de personas</h3>
+          <p>8 controles: cribado, empleo, formación, disciplina, teletrabajo y notificación de eventos.</p>
+        </a>
+        <a class="tarjeta" href="tema-7.html">
+          <span class="num">A.7</span>
+          <h3>Controles físicos</h3>
+          <p>14 controles: perímetros, monitorización, equipo, soportes, servicios de apoyo y eliminación segura.</p>
+        </a>
+        <a class="tarjeta" href="tema-8.html">
+          <span class="num">A.8</span>
+          <h3>Controles tecnológicos</h3>
+          <p>34 controles: acceso, criptografía, configuración, copias, redes, seguridad de desarrollo…</p>
+        </a>
+      </div>
+
+      <h2 id="guia">¿Y la guía de implementación?</h2>
+      <p>La 27001 enumera; la <strong>27002 desarrolla</strong>. El enunciado de cada control aparece en la Tabla A.1 de la 27001 (en forma de requisito: «deberá…») y la 27002 añade la guía práctica, los roles implicados, las entradas/salidas, las consideraciones de planificación, el software/hardware/CRM implicados y las referencias cruzadas. Todo ese contenido se recorre en la sección <a href="estructura-27002.html">ISO/IEC 27002:2022</a> de este sitio, y la correspondencia entre las dos ediciones está <a href="correspondencia.html">en esta tabla</a>.</p>
+
+      <p class="texto-menor">Ningún control de 2013 desapareció: los 114 se reorganizaron en 93 (11 nuevos, 24 por fusión, el resto actualizado o igual). Ver <a href="cambios-2022.html">qué cambió en la edición 2022</a>.</p>

@@ -1,0 +1,104 @@
+<h1 class="sin-margen-sup">ISO/IEC 27002:2022: estructura del documento y cómo leer un control</h1>
+      <p class="entradilla">La ISO/IEC 27002 es el <strong>código de buenas prácticas</strong> que desarrolla los 93 controles del Anexo A. No es certificable en sí misma — nadie «tiene la 27002» —: su valor está en la guía de implementación de cada control, idéntica en numeración y título a la Tabla A.1 de la 27001.</p>
+
+      <h2 id="estructura-doc">La estructura del documento</h2>
+      <ul>
+        <li><strong>Introducción</strong> (0.1 a 0.8): antecedentes, requisitos, controles y cómo la 27001 y la 27002 se usan juntas.</li>
+        <li><strong>Cláusulas 1 a 3:</strong> alcance, referencia (ISO/IEC 27000) y términos.</li>
+        <li><strong>Cláusula 4:</strong> estructura del documento — cláusulas, temas, atributos y diseño del control.</li>
+        <li><strong>Cláusulas 5 a 8:</strong> los 93 controles (organizacionales, personas, físicos y tecnológicos).</li>
+        <li><strong>Anexo A</strong> (informativo): cómo usar los atributos para crear vistas propias.</li>
+        <li><strong>Anexo B</strong> (informativo): correspondencia con la edición 2013 — la fuente de <a href="correspondencia.html">esta tabla</a>.</li>
+      </ul>
+
+      <h2 id="anatomia">La anatomía de cada control</h2>
+      <p>Desde la edición 2022, todos los controles siguen el mismo diseño editorial (4.3 del documento):</p>
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Secciones de un control en ISO/IEC 27002:2022</caption>
+          <thead>
+            <tr><th>Sección</th><th>Qué contiene</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Número y título</strong></td><td>Idénticos a la Tabla A.1 de la 27001 (p. ej., A.5.7 Inteligencia de amenazas).</td></tr>
+            <tr><td><strong>Descripción</strong></td><td>El enunciado del control. En la 27001 aparece como requisito («deberá…»); en la 27002 es orientación («conviene que…»).</td></tr>
+            <tr><td><strong>Orientación sobre su implementación</strong></td><td>Las acciones prácticas típicas: qué, quién, cómo, con qué frecuencia.</td></tr>
+            <tr><td><strong>Orientación adicional</strong></td><td>Notas, advertencias y consideraciones según el control (tabla de atributos incluida).</td></tr>
+            <tr><td><strong>Referencias a otros controles</strong></td><td>Relaciones con controles nacionales e internacionales y a la norma de nube o continuidad que proceda.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="temas">Los cuatro temas</h2>
+      <p>Los controles se agrupan por la <strong>naturaleza del medio de protección</strong>:</p>
+      <div class="rejilla">
+        <a class="tarjeta" href="tema-5.html">
+          <span class="num">A.5</span>
+          <h3>Organizacionales · 37</h3>
+          <p>Políticas, roles, activos, clasificación, acceso, proveedores, nube, incidentes, continuidad, legal, cumplimiento.</p>
+        </a>
+        <a class="tarjeta" href="tema-6.html">
+          <span class="num">A.6</span>
+          <h3>Personas · 8</h3>
+          <p>Selección, empleo, formación, disciplina, salida, confidencialidad, teletrabajo, reporte.</p>
+        </a>
+        <a class="tarjeta" href="tema-7.html">
+          <span class="num">A.7</span>
+          <h3>Físicos · 14</h3>
+          <p>Perímetros, entradas, salas, amenazas ambientales, escritorio, equipo, soportes, servicios.</p>
+        </a>
+        <a class="tarjeta" href="tema-8.html">
+          <span class="num">A.8</span>
+          <h3>Tecnológicos · 34</h3>
+          <p>Endpoints, privilegios, autenticación, capacidad, malware, vulnerabilidades, configuración, datos, continuidad técnica, redes, criptografía, desarrollo, cambios.</p>
+        </a>
+      </div>
+
+      <h2 id="atributos">Los cinco atributos: la gran novedad de 2022</h2>
+      <p>Cada control lleva asociados <strong>cinco atributos</strong> (4.2) que permiten ordenar los 93 controles según otras perspectivas, además de la temática del Anexo A. Es la respuesta de la norma a los marcos de ciberseguridad y a la gestión por capacidades:</p>
+
+      <div class="tabla-scroll">
+        <table class="tabla">
+          <caption>Atributos de los controles (Anexo A de ISO/IEC 27002:2022)</caption>
+          <thead>
+            <tr><th style="width:26%">Atributo</th><th>Perspectiva</th><th>Valores posibles</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Tipo de control</strong></td>
+              <td>Cuándo y cómo modifica el riesgo respecto a un incidente.</td>
+              <td>Preventivo · Detective · Correctivo</td>
+            </tr>
+            <tr>
+              <td><strong>Propiedades de la seguridad de la información</strong></td>
+              <td>Qué característica de la información ayuda a preservar.</td>
+              <td>Confidencialidad · Integridad · Disponibilidad</td>
+            </tr>
+            <tr>
+              <td><strong>Conceptos de ciberseguridad</strong></td>
+              <td>Asociación con el marco de ciberseguridad de ISO/IEC TS 27110.</td>
+              <td>Identificar · Proteger · Detectar · Responder · Recuperar</td>
+            </tr>
+            <tr>
+              <td><strong>Capacidades operativas</strong></td>
+              <td>La visión del practicante: qué capacidad organizativa ejecuta el control.</td>
+              <td>Gobernanza · Gestión de activos · Protección de la información · Seguridad de personas · Seguridad física · Sistemas y redes · Aplicaciones · Configuración segura · Identidad y accesos · Amenazas y vulnerabilidades · Continuidad · Relaciones con proveedores · Legal y cumplimiento · Gestión de eventos · Aseguramiento</td>
+            </tr>
+            <tr>
+              <td><strong>Dominios de seguridad</strong></td>
+              <td>Los cuatro dominios del panorama de seguridad.</td>
+              <td>Gobernanza y ecosistema · Protección · Defensa · Resiliencia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="caja caja-clave">
+        <span class="titulo-caja">Para qué sirven en la práctica</span>
+        <p>Filtrar y agrupar: el consejo de administración puede ver «todos los controles Detectives del marco Responder», el equipo de continuidad puede ver «los controles que tocan Disponibilidad», y el jurista «los del dominio Legal y cumplimiento». Los mismos 93 controles, vistas cruzadas — la forma más cómoda de demostrar que un SGSI cubre también un marco de ciberseguridad tipo NIST CSF sin duplicar trabajo.</p>
+      </div>
+
+      <h2 id="uso-27001">Su relación con la ISO/IEC 27001:2022</h2>
+      <p>La Tabla A.1 de la 27001 toma sus enunciados <strong>directamente y alineados</strong> con los capítulos 5 a 8 de la 27002: el mismo número, el mismo título, el mismo texto del control. Al elegir controles en 6.1.3 de la 27001, la 27002 aporta cómo implementarlos y qué considerar; la decisión de aplicabilidad y su justificación (SoA) siguen siendo de la organización.</p>
+
+      <p class="texto-menor">Recorre los temas: <a href="tema-5.html">organizacionales</a> · <a href="tema-6.html">personas</a> · <a href="tema-7.html">físicos</a> · <a href="tema-8.html">tecnológicos</a>, o la <a href="correspondencia.html">correspondencia completa con la edición 2013</a>.</p>
