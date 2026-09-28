@@ -34,10 +34,12 @@ jobs:
         run: npm run lint
 
       - name: Compilar
-        # El sitio cuelga de /<nombre-del-repo>/ en GitHub Pages.
+        # Dominio propio (normaiso27001.eehub.ing): el sitio se sirve desde
+        # la raíz del dominio, así que la base es '/'. Si se retirara el
+        # dominio personalizado, volver a '/${{ github.event.repository.name }}/'.
         run: npm run build
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/
+          VITE_BASE: /
 
       - name: Copiar index.html como 404.html
         # GitHub Pages no sabe reescribir rutas al index. Sirviendo el mismo
