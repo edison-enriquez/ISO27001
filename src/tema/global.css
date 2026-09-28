@@ -1031,3 +1031,117 @@ details.faq .respuesta p:last-child { margin-bottom: 0; }
 @media (max-width: 640px) {
   .ficha-atributos .fila { grid-template-columns: 1fr; gap: 0.2rem; }
 }
+
+/* ==========================================================================
+   Guia de estudio: talleres y autoevaluacion
+   ========================================================================== */
+details.taller {
+  margin: 0.9rem 0;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background: var(--fondo-suave);
+  padding: 0 1.1rem;
+}
+
+details.taller[open] { padding-bottom: 0.6rem; }
+
+details.taller summary {
+  cursor: pointer;
+  padding: 0.85rem 0;
+  font-weight: 700;
+  color: var(--uao-vino);
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+}
+
+details.taller summary::-webkit-details-marker { display: none; }
+
+.taller-fase {
+  flex: 0 0 auto;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--texto-inverso);
+  background: var(--uao-vino);
+  border-radius: 999px;
+  padding: 0.15em 0.7em;
+  text-transform: uppercase;
+}
+
+.quiz-bloque { margin: 0.6rem 0 1.6rem; }
+
+.quiz-item {
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  background: var(--fondo);
+  padding: 1rem 1.1rem;
+  margin: 0.9rem 0;
+}
+
+.quiz-enun { display: flex; gap: 0.7rem; font-weight: 600; margin: 0 0 0.8rem; }
+
+.quiz-num {
+  flex: 0 0 auto;
+  width: 1.7em; height: 1.7em;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--uao-vino);
+  color: var(--texto-inverso);
+  font-size: 0.85em;
+  font-weight: 800;
+}
+
+.quiz-opciones { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
+
+button.quiz-op {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: var(--texto);
+  background: var(--fondo-suave);
+  border: 1.5px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 0.55rem 0.8rem;
+  cursor: pointer;
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+button.quiz-op:hover:not(:disabled) { border-color: var(--uao-vino); }
+button.quiz-op:disabled { cursor: default; }
+
+.quiz-letra {
+  flex: 0 0 auto;
+  font-weight: 800;
+  color: var(--uao-vino);
+}
+
+button.quiz-op.acierto {
+  border-color: var(--caja-clave-borde);
+  background: var(--caja-clave-fondo);
+}
+
+button.quiz-op.error {
+  border-color: var(--caja-error-borde);
+  background: var(--caja-error-fondo);
+}
+
+.quiz-explicacion {
+  margin: 0.7rem 0 0;
+  padding: 0.6rem 0.8rem;
+  border-left: 3px solid var(--caja-clave-borde);
+  background: var(--fondo-alt);
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+}
+
+.quiz-marca {
+  font-weight: 700;
+  color: var(--uao-vino);
+  margin-top: 0.4rem;
+}
+
+.quiz-fase h3 { margin-top: 2rem; }

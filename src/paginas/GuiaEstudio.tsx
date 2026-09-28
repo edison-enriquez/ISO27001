@@ -8,6 +8,8 @@ import {
   DiagramaProcesoRiesgo,
   DiagramaTiposAuditoria,
 } from '../componentes/diagramas/Curso';
+import { BancoPreguntas } from '../componentes/Quiz';
+import { TALLERES } from '../datos/practica';
 
 export function GuiaEstudio() {
   useEffect(() => {
@@ -265,7 +267,42 @@ export function GuiaEstudio() {
               por la dirección para sostener la mejora.
             </p>
 
-            <h2 id="checklist">Checklist de repaso rápido</h2>
+            <h2 id="practica">Práctica: talleres del curso</h2>
+            <p>
+              El material docente desarrolla cada fase con talleres presenciales. Están
+              reformados aquí como ejercicios autónomos: toma una organización real o
+              inventada y recorrelos en orden. Despliega cada uno para ver el objetivo, la entrega
+              esperada y las pistas.
+            </p>
+            {TALLERES.map((tl) => (
+              <details key={tl.id} className="taller">
+                <summary>
+                  <span className="taller-fase">Fase {tl.fase}</span>
+                  {tl.titulo}
+                </summary>
+                <p><strong>Objetivo.</strong> {tl.objetivo}</p>
+                <p><strong>Entrega.</strong> {tl.entrega}</p>
+                <p><strong>Pistas.</strong></p>
+                <ul>
+                  {tl.pistas.map((x) => <li key={x}>{x}</li>)}
+                </ul>
+              </details>
+            ))}
+
+            <h2 id="autoevaluacion">Autoevaluación por fases</h2>
+            <p>
+              Banco de preguntas de elaboración propia, en el espíritu del examen de
+              certificación del curso. Elige opción y obtén la explicación al momento;
+              cada fase cierra con su marcador.
+            </p>
+            {[1, 2, 3, 4, 5].map((f) => (
+              <section key={f} className="quiz-fase">
+                <h3>Fase {f}</h3>
+                <BancoPreguntas fase={f} />
+              </section>
+            ))}
+
+
             <div className="tabla-scroll">
               <table className="tabla">
                 <thead>
@@ -282,6 +319,7 @@ export function GuiaEstudio() {
                   <tr><td>Tipos de auditoría y principios (19011)</td><td><a href="#fase-4">Fase 4 de esta guía</a></td></tr>
                   <tr><td>Redacción de no conformidades e informe</td><td><a href="#fase-5">Fase 5 de esta guía</a></td></tr>
                   <tr><td>Plazos: fin de la 2013 el 31-10-2025</td><td><Link to="/iso-27001/cambios-2022">Qué cambió en 2022</Link></td></tr>
+                  <tr><td>Talleres del curso y examen final</td><td><a href="#practica">Práctica</a> y <a href="#autoevaluacion">autoevaluación</a></td></tr>
                 </tbody>
               </table>
             </div>
@@ -297,6 +335,8 @@ export function GuiaEstudio() {
                   <li><a href="#fase-3">3 · Gestión del riesgo (27005)</a></li>
                   <li><a href="#fase-4">4 · Auditoría (ISO 19011)</a></li>
                   <li><a href="#fase-5">5 · Evaluación y práctica</a></li>
+                  <li><a href="#practica">Práctica: talleres</a></li>
+                  <li><a href="#autoevaluacion">Autoevaluación por fases</a></li>
                   <li><a href="#checklist">Checklist de repaso</a></li>
                 </ul>
               </div>
