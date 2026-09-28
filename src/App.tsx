@@ -4,6 +4,7 @@ import { Cabecera } from './componentes/Cabecera';
 import { PieDePagina } from './componentes/PieDePagina';
 import { Inicio } from './paginas/Inicio';
 import { Seccion } from './paginas/Seccion';
+import { GuiaEstudio } from './paginas/GuiaEstudio';
 import { Fuentes } from './paginas/Fuentes';
 
 /**
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/iso-27001/:slug" element={<Seccion normaId="iso-27001" />} />
         <Route path="/iso-27002/:slug" element={<Seccion normaId="iso-27002" />} />
+        <Route path="/guia-estudio" element={<GuiaEstudio />} />
         <Route path="/fuentes" element={<Fuentes />} />
         <Route path="*" element={<Inicio />} />
       </Routes>

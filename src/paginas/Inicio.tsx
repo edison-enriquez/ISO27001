@@ -140,6 +140,17 @@ export function Inicio() {
               </Link>
             </div>
 
+            <div className="widget widget-destacado">
+              <h2>Guía de estudio IA/LA</h2>
+              <p>
+                Ruta en cinco fases —fundamentos, implantación, riesgo 27005, auditoría 19011 y
+                evaluación— con los diagramas del curso recreados en SVG.
+              </p>
+              <Link className="boton boton-claro" to="/guia-estudio">
+                Ir a la guía de estudio
+              </Link>
+            </div>
+
             <div className="widget">
               <h2>Sobre las fuentes</h2>
               <div className="texto">

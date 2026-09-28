@@ -46,6 +46,9 @@ export function PieDePagina() {
             <h3>Recursos</h3>
             <ul>
               <li>
+                <Link to="/guia-estudio">Guía de estudio (IA/LA)</Link>
+              </li>
+              <li>
                 <Link to="/iso-27001/implantacion">Implantación paso a paso</Link>
               </li>
               <li>

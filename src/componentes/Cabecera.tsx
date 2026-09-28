@@ -125,6 +125,10 @@ export function Cabecera() {
                   ))}
                 </ul>
               </li>
+
+              <li className={pathname === '/guia-estudio' ? 'activo' : undefined}>
+                <NavLink to="/guia-estudio">Guía de estudio</NavLink>
+              </li>
             </ul>
           </nav>
         </div>

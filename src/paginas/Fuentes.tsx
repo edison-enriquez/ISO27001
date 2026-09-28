@@ -74,6 +74,17 @@ export function Fuentes() {
                       climático es una cuestión relevante.
                     </td>
                   </tr>
+                  <tr>
+                    <td><strong>Guía de estudio (ruta en 5 fases y diagramas)</strong></td>
+                    <td>
+                      Estructura temática del material docente «ISO 27001 Internal Auditor / Lead
+                      Auditor I217001 IA/LA» de CertiProf®, versión V112022 (alineada con la edición
+                      2022). Sus figuras (ciclo PHVA del SGSI, familia 27000, proceso de riesgo,
+                      etapas de implantación, tipos de auditoría y flujo del programa de auditoría)
+                      están <strong>recreadas en SVG</strong> en este sitio: no se reproducen las
+                      imágenes originales.
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>

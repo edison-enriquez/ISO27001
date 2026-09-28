@@ -961,3 +961,29 @@ details.faq .respuesta p:last-child { margin-bottom: 0; }
   color: var(--texto-inverso);
   background: var(--caja-clave-borde);
 }
+
+/* ==========================================================================
+   Figuras (diagramas SVG) de la guía de estudio
+   ========================================================================== */
+.figura {
+  margin: 2.2rem 0;
+  padding: 1.1rem 1.2rem 1rem;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-lg);
+  background: var(--fondo-suave);
+  box-shadow: var(--sombra-sm);
+}
+
+.figura svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.figura figcaption {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px dashed var(--borde);
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
