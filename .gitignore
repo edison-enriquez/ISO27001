@@ -1,21 +1,27 @@
+# --- Dependencias ---
 node_modules/
+
+# --- Build ---
 dist/
 dist-ssr/
-*.local
 .vite/
+*.tsbuildinfo
 
+# --- Env / local ---
+*.local
+
+# --- Sistema operativo ---
 .DS_Store
 Thumbs.db
 
+# --- Editores / IDE ---
 .vscode/*
 !.vscode/extensions.json
 .idea/
 
-# Fuentes locales con derechos de autor (ISO/IEC 27001:2022, 27002:2022 y material docente):
-# no subir a un repositorio público.
+# --- PDFs: no subir (ISO/IEC y material docente con copyright) ---
 *.pdf
+*.PDF
 
-# Referencia local de la plantilla (no forma parte del sitio)
+# --- Referencia local de la plantilla (no forma parte del sitio) ---
 _ref/
-
-*.tsbuildinfo
